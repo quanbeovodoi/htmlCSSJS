@@ -1,0 +1,23 @@
+.board_game{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menugame{
+    margin-left: 1rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.123) 20px 10px 50px;
+}
+.menugame .btn_game{
+    padding: 1rem;
+    transition: all 0.15s ease-in-out;
+}
+.menugame .btn_game:hover{
+    background-color: #333;
+    color: #fff;
+}
+.board_game {
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.123) 20px 10px 50px;
+}

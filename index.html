@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EngLish</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./assets/css/detail.css">
+  <link rel="stylesheet" href="./assets/css/snake_game.css">
+</head>
+
+<body>
+  <div class="subForm" id="subForm">
+
+  </div>
+  <div class="main" id="main">
+    <div class="header" id="header">
+      <div class="header_top">
+        <div class="container">
+          <div class="navbar_top">
+            <div class="navbar_top--left">
+              <a class="link navbar_left--title" id="login_btn" href="#">Login</a>
+              <span>|</span>
+              <a class="link navbar_left--title" id="reg_btn" href="#">Register</a>
+            </div>
+            <div class="navbar_top--middle">
+              <h4>All In One</h4>
+            </div>
+            <div class="navbar_top--right">
+              <a href="" class="link youtube">
+                <div class="navbar_top--icon icon_youtube">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+              </a>
+              <a href="" class="link facebook">
+                <div class="navbar_top--icon icon_facebook">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="link cart" id="cart_btn">
+                <div class="navbar_top--icon icon_cart">
+                  <span id="quantity_cart">2</span>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="link profile" id="profile_name">
+                <span class="navbar_top--name">Nguyen Hoang Quan</span>
+                <div class="navbar_top--icon icon_profile">
+                  <ion-icon name="people-circle-outline"></ion-icon>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="navbar">
+            <!-- <div class="navbar_icon">
+              <a href="" class="navbar_icon--link">
+                <div class="navbar_icon--img" style="background-image: url('./assets/images/english.png');"></div>
+              </a>
+            </div> -->
+            <div class="navbar_left">
+              <a href="#">
+                <div class="header_bottom--right-icon">
+                  <div class="logo_icon" style="background-image: url('./assets/images/KockOut-croped-icon.png');">
+                  </div>
+                </div>
+              </a>
+              <div class="header_bottom_brand">
+                <div class="image_text" style="background-image: url('./assets/images/KockOut-croped-text.png');">
+                </div>
+              </div>
+            </div>
+            <div class="navbar_mid">
+              <ul class="navbar_menu">
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">HOME</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">COURSE</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">BLOG</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">CATEGORIES</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">HOT PRODUCT</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="navbar_menu--item">
+                    <a href="#" class="navbar_menu--link">ABOUT US</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar_right">
+              <div class="search">
+                <div class="header_bottom_icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <div class="banner_container">
+          <div class="slide" id="slideForm">
+            <div class="slide_container" id="slide_container">
+
+            </div>
+            <div class="slide_image--extra">
+              <div class="slide_image--little"></div>
+              <div class="slide_image--middle"></div>
+              <div class="slide_image--bigger"></div>
+            </div>
+            <ol class="page_dots" id="page_dots">
+
+            </ol>
+            <div class="slide_item--button">
+              <div id="nav-button--prev" class="slide_nav--button slide_nav--button-prev"><ion-icon
+                  name="caret-back-outline"></ion-icon></div>
+              <div id="nav-button--next" class="slide_nav--button slide_nav--button-next"><ion-icon
+                  name="caret-forward-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_area">
+
+        <div class="section_products section_bw">
+          <div class="section_block" id="top_products--contain">
+            <h3 class="section_title text_white">Products</h3>
+            <div class="grid grid-4 section_block_container" id="top_products"></div>
+            <div class="page_number">
+              <ul class="page_number--list">
+                <!-- <div class="section_block--item">
+              <div class="section_block--img" style="background-image: url('./assets/images/Course.png');"></div>
+              <div class="section_block--content">
+                <h4 class="section_block--title">Sach giao khoa abcxyz</h4>
+                <div class="section_block--free">500$</div>
+                <div class="animation_text">View Detail</div>
+              </div>
+              <div class="section_icon--link">
+                <a href="" class="icon_button add_wishList" data-action="post">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </a>
+                <form action="" class="toCart_form" method="POST">
+                  <button class="icon_button add_cart"><ion-icon name="bag-add-outline"></ion-icon></button>
+                </form>
+                <a href="" class="icon_button viewDetail" data-action="post">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </a>
+              </div>
+            </div> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- GameTest -->
+        <div class="section_block" id="top_game--contain">
+          <h3 class="section_title">Snake</h3>
+          <div class="board_game">
+            <canvas id="snake_game" width="400" height="400"></canvas>
+            <div class="menugame">
+              <p class="score_snake" id="score">Score <span>0<span></p>
+              <button class="btn_game" id="play_snake">PLAY GAME</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <div class="grid footer_area">
+      <div class="grid-4 container footer_container">
+        <div class="footer_item">© 2023 - 2024 EL. All courses free for everyone</div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./assets/js/importApi.js"></script>
+  <script src="./assets/js/scroll_handle.js"></script>
+  <script src="./assets/js/slide.js"></script>
+  <script src="./assets/js/page_number.js"></script>
+  <script src="./assets/js/Game/snake.js"></script>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>
